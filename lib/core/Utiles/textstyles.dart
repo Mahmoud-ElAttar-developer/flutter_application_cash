@@ -12,7 +12,7 @@ import 'package:google_fonts/google_fonts.dart';
 TextStyle getTitleStyle({
   double fontsize=18,
 FontWeight fontWeight=FontWeight.bold,
-Color color=Colors.black
+Color color=Colors.white
 }){
   return GoogleFonts.lato(
     fontSize:fontsize,
@@ -27,7 +27,7 @@ Color color=Colors.black
 TextStyle getBodyStyle({
     double fontsize=16,
   FontWeight fontWeight=FontWeight.normal,
-  Color color=Colors.black
+  Color color=Colors.white
   }){
   return GoogleFonts.poppins(
     fontSize:fontsize,
@@ -43,7 +43,7 @@ TextStyle getBodyStyle({
 TextStyle getSmallStyle({
   double fontsize=14,
   FontWeight fontWeight=FontWeight.normal,
-  Color color=Colors.black
+  Color color=Colors.white
   }){
   return  TextStyle(
     fontSize:fontsize,

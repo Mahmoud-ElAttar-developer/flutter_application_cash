@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_cash/core/Model/task_model.dart';
+// ignore: unused_import
 import 'package:flutter_application_cash/core/Utiles/app_files.dart';
+import 'package:flutter_application_cash/core/themes.dart';
 import 'package:flutter_application_cash/splash_screen.dart';
+// ignore: unused_import
 import 'package:google_fonts/google_fonts.dart';
 // ignore: unnecessary_import
 import 'package:hive/hive.dart';
@@ -21,31 +25,14 @@ class MainApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return  MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-
-        primaryColor: AppColor.blackcolor,
-        primaryColorDark: AppColor.gryecolor,      
-       useMaterial3: true,
-        scaffoldBackgroundColor: AppColor.whitecolor,
-        fontFamily: GoogleFonts.lato().fontFamily,
-        inputDecorationTheme: InputDecorationTheme(
-          enabledBorder: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(15), 
-          ),
-          focusedBorder: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(15), 
-          ),
-          focusedErrorBorder: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(15), 
-          ),
-          errorBorder: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(15), 
-          ),
-        )
-        
-        
-        ),
+      themeMode:ThemeMode.dark,
+      darkTheme: darkThem,
+      theme: lightThem,
       home:const SplashView()
     );
   }
 }
+
+
+
+
